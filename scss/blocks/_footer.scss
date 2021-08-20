@@ -1,0 +1,120 @@
+.footer{
+    max-width: 1440px;
+    &__bottom{
+        background-color: #333A44;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1440px;
+        padding: 35px 168px;
+    }
+    &__top{
+        background-color: #495567;
+        padding: 102px 165px;
+        display: flex;
+        justify-content: space-between;
+        background-image: url(./../images/circles.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    &__title{
+        max-width: 415px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    &__img{
+        margin-right: 18px;
+    }
+    &__bottom{
+        display: flex;
+    }
+    &__wrapper{
+        display: flex;
+        min-height: 53px;
+        align-items: center;
+        max-width: 1106px;
+        justify-content: space-between; 
+    }
+
+    &__content{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        margin-right: 58px;
+    }
+    &__list{
+        display: flex;
+        flex-grow: 1;
+    }
+    &__list-item:nth-child(even){
+        margin:0 32px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .footer{
+        max-width: 768px;
+        &__top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 62px 156px;
+        }
+        &__title{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        &__bottom{
+            max-width: 768px;
+            max-width: 768px;
+            padding: 35px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        }
+    }
+
+    @media only screen and (max-width: 375px){
+        .footer{
+            max-width: 375px;
+            &__logo{
+                margin-right: 0;
+                margin-bottom: 41px;
+            }
+            &__top{
+                padding: 80px 32px;
+                max-width: 375;
+            }
+            &__content{
+                max-width: 311px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 80px;
+            }
+            &__list{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__list-item:nth-child(even){
+                margin: 0;
+                margin: 16px 0;
+            }
+            &__title{
+                font-size: 32px;
+                line-height: 32px;
+            }
+            &__bottom{
+                display: flex;
+                flex-direction: column;
+                max-width: 375px;
+                align-items: center;
+                padding: 64px 128px;
+            }
+        }
+    }
